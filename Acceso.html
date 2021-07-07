@@ -1,6 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-
-    
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaccion</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <form action="">
+        <label for="nombre">nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="pago">Selecciona el pago</label>
+            <select id="tipoPago" name="pago">
+                <option value="efectivo">efectivo</option>
+                <option value="tarjeta">tarjeta</option>
+            </select>
+        <label for="ingresar">Valor</label>
+        <input type="number" name="ingresar" 
+        placeholder="ingresar" id="valor">
+        <input type="button" value="submit" id="btnEnviar">
+    </form>
+</body>
+</html>
