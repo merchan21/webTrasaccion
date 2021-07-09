@@ -73,3 +73,4 @@ function dialogFlo() {
     html+='</div>'
     dialog.innerHTML = hmtl   
 }
+
