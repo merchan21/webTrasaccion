@@ -15,6 +15,7 @@
 
   <!-- Nuestro css-->
   <link rel="stylesheet" href="css/estilo.css">
+  <script src="./js//retiro.js" defer></script>
   <title>Deposito</title>
 </head>
 <body>
@@ -54,12 +55,11 @@
   <main>
   <section class="form-register">
     <h4>Retiro</h4>
-    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese Nombre del Titular" minlength="5" maxlength="40" required pattern="[A-Za-z]+">
     <input class="controls" type="number" name="Numeroc" id="Ncuenta" placeholder="Ingrese Numero de Cuenta"minlength="9" maxlength="20" required pattern="[0-9]+">
     <input class="controls" type="text" name="nombreint" id="nombreint" placeholder="Nombre de la Institucion a depositar" minlength="5" maxlength="40" required pattern="[A-Za-z]+">
     <input class="controls" type="date" name="fech" id="fecha" placeholder="Ingrese Fecha" required>
     <input class="controls" type="number" name="cantidad" id="valor" placeholder="Valor" minlength="1" maxlength="999999999" required pattern="[0-9]+">
-    <input class="botons" type="submit" value="Retirar">
+    <button class="botons" value="Retirar" id="btnRetirar">retirar</button>
     <p><a href="./Deposito.html">¿Quieres Hacer un depostio?</a></p>
   </section>
 </main>

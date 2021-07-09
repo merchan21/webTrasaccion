@@ -9,7 +9,7 @@
   }
   
   .form-register {
-    width: 400px;
+    width: 800px;
     background: #24303c;
     padding: 30px;
     margin: auto;
@@ -63,3 +63,17 @@
     margin: 16px 0;
     font-size: 16px;
   }
+
+
+  .cardReposit{
+    display: row;
+  }
+
+  .itemCard{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+
+

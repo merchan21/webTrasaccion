@@ -4,6 +4,7 @@ const btnEnviar = document.getElementById("btnEnviar")
 const tipoPago = document.getElementById("tipoPago")
 var url = 'http://localhost:3000/cliente'; 
 
+
 const data = {
     nombre : inpNombre.value, 
     direccion:"110", 
