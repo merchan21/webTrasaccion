@@ -27,5 +27,10 @@ btnDepositar.addEventListener('click', () => {
     }).then(res => res.json())
     .catch(error => console.log('ERROR', error))
     .then(response => console.log('SUCEESS', response))
+    datosUsuario.value=''
+    numeroCuenta.value=''
+    nombreint.value=''
+    fecha.value=''
+    valor.value=''
    
 })

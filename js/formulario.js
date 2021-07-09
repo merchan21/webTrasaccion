@@ -2,7 +2,7 @@ const divDepositos = document.querySelector('#containerDeposito')
 const containerRetiro = document.querySelector('#containerRetiro')
 const btnActualizar = document.getElementById('btnActualizar')
 const btnEliminar = document.getElementById('btnEliminar')
-const btnsalir = document.getElementById('btnsalir')
+
 
 const dialog = document.querySelector('#dialog')
 consultarRetiros()
@@ -14,9 +14,8 @@ btnActualizar.addEventListener('click', ()=> {
 })
 
 
-btnsalir.addEventListener('click', () => {
-    document.getElementById("#salir").removeAttribute("active")
-})
+let valores = []
+
 
 function consultarDepositos() {
     fetch('http://localhost:3000/')
@@ -24,9 +23,10 @@ function consultarDepositos() {
     .then(data => {    
         html='<div class="cardReposit">'
           data.forEach(element => {
+              valores.push(element)
               html+= `
               <div class="itemCard">
-              <p>Numero de cuenta: ${element.numeroCuenta}</p>
+              <p class="numeroCuenta">Numero de cuenta: ${element.numeroCuenta}</p>
               <div style="display:row">
                   <p>${element.fecha}</p>
                   <p>Costo: $${element.valor}</p>
@@ -41,6 +41,7 @@ function consultarDepositos() {
   
       });    
 }
+
 
 
 function consultarRetiros() {
@@ -58,19 +59,7 @@ function consultarRetiros() {
                 
           });
           html+='</div>'
-
           containerRetiro.innerHTML = html
-          dialogFlo()
       });       
-}
-
-
-function dialogFlo() {
-    html='<div>'
-        html+=`
-            <p>golg</p>
-        `
-    html+='</div>'
-    dialog.innerHTML = hmtl   
 }
 
